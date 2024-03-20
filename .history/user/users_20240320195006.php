@@ -29,10 +29,6 @@ function createUser($data)
 
 function updateUser($data, $id)
 {
-    echo '<pre>';
-    var_dump($data);
-    echo '<pre>';
-
     $users = getUsers();
     foreach ($users as $i => $user) {
         if ($user['id'] == $id) {

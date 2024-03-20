@@ -30,7 +30,7 @@ function createUser($data)
 function updateUser($data, $id)
 {
     echo '<pre>';
-    var_dump($data);
+    var_dump($daat);
     echo '<pre>';
 
     $users = getUsers();

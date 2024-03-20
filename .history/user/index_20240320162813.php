@@ -37,7 +37,7 @@ include '../partials/header.php';
                         <?php echo $user['phone'] ?>
                     </td>
                     <td>
-                        <a href=" http://<?php echo $user['website'] ?>"> <?php echo $user['website'] ?></a>
+                        <a href=" http<?php echo $user['website'] ?>"> <?php echo $user['website'] ?></a>
                     </td>
                     <td>
                         <a href="view.php?id=<?php echo $user['id'] ?>" class="btn btn-sm btn-outline-info">View</a>

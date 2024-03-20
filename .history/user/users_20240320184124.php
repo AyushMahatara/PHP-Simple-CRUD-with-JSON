@@ -29,14 +29,10 @@ function createUser($data)
 
 function updateUser($data, $id)
 {
-    echo '<pre>';
-    var_dump($data);
-    echo '<pre>';
-
     $users = getUsers();
-    foreach ($users as $i => $user) {
+    foreach ($users as $user) {
         if ($user['id'] == $id) {
-            $users[$i] = array_merge($user, $data);
+            $user['i'] = array_merge($user, $data);
         }
     }
     file_put_contents('./users.json', json_encode($users));
