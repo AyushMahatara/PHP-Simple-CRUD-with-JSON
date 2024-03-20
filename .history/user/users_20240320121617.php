@@ -2,11 +2,11 @@
 
 function getUsers()
 {
-    return json_decode(file_get_contents('./users.json'), true);
+    $users = file_get_contents('./users.json');
 
-    // echo '<pre>';
-    // var_dump($users);
-    // echo '<pre>';
+    echo '<pre>';
+    var_dump($users);
+    echo '<pre>';
 }
 
 
